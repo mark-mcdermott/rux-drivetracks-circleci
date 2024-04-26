@@ -3,13 +3,13 @@ services:
   sentimentalyzer:
     build: ../front
     ports:
-      - "3000"
+      - "3000:3000"
   cypress:
     image: "cypress/included:3.7.0"
     depends_on:
       - sentimentalyzer
     environment:
-      - CYPRESS_baseUrl=http://sentimentalyzer:3000
+      - CYPRESS_baseUrl=http://localhost:3000
     working_dir: /e2e
     volumes:
       - ./:/e2e
