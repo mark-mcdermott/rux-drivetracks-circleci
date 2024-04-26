@@ -3,7 +3,7 @@ services:
   sentimentalyzer:
     build: ../front
     environment:
-      - PORT=8123
+      - PORT=3000
   cypress:
     image: "cypress/included:3.7.0"
     depends_on:
