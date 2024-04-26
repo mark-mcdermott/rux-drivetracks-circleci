@@ -51,3 +51,6 @@ back/tmp/storage/*
 back/tmp/storage/
 back/tmp/storage/.keep
 back/config/master.key
+
+e2e/cypress/screenshots/
+e2e/cypress/videos/
