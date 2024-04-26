@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   sentimentalyzer:
-    build: ../front-bak
+    build: ../front
     environment:
       - PORT=3000
   cypress:
