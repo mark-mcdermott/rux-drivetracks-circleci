@@ -9,7 +9,7 @@ services:
     depends_on:
       - sentimentalyzer
     environment:
-      - CYPRESS_baseUrl=http://sentimentalyzer:8123
+      - CYPRESS_baseUrl=http://sentimentalyzer:3000
     working_dir: /e2e
     volumes:
       - ./:/e2e
